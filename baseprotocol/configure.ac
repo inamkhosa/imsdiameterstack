@@ -66,13 +66,6 @@ dnl -----------------------------------------------
 dnl Checks for libraries.
 dnl -----------------------------------------------
 
-PKG_CHECK_MODULES(LIBXML_DEPS, libxml-2.0 >= 2.6.16)
-AC_SUBST(LIBXML_DEPS_CFLAGS)
-AC_SUBST(LIBXML_DEPS_LIBS)
-
-PKG_CHECK_MODULES(LIBAMPS_DEPS, libamps-1.0 >= 1.0.0)
-AC_SUBST(LIBAMPS_DEPS_CFLAGS)
-AC_SUBST(LIBAMPS_DEPS_LIBS)
 
 #AC_CHECK_LIB(amps,[AMPS_Init], [], [AC_MSG_ERROR([AMPS library not found])])
 

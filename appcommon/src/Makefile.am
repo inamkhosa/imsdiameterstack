@@ -8,7 +8,7 @@ c_sources = dappcommon_dbqueryload.c dappcommon_xmlutils.c dappcommon_srvrconflo
 library_includedir=$(includedir)/diameter/$(PACKAGE_NAME)/
 library_include_HEADERS = $(h_sources)
 
-INCLUDES = -I. -I$(includedir)/diameter $(LIBXML_DEPS_CFLAGS) $(LIBAMPS_DEPS_CFLAGS)
+INCLUDES = -I. -I$(includedir)/diameter -I$(top_srcdir)/include/amps -I$(top_srcdir)/include/libxml2
 
 lib_LTLIBRARIES= libdiamappcommon.la
 libdiamappcommon_la_SOURCES= $(h_sources) $(c_sources)

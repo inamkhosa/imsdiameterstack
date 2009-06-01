@@ -8,7 +8,7 @@ c_sources = dmbase_ampswrappers.c dmbase_appcallbackreg.c dmbase_avp.c dmbase_ce
 library_includedir=$(includedir)/$(PACKAGE_NAME)/
 library_include_HEADERS = $(h_sources)
 
-INCLUDES = -I. $(LIBAMPS_DEPS_CFLAGS) $(LIBXML_DEPS_CFLAGS)
+INCLUDES = -I. -I$(top_srcdir)/include/amps -I$(top_srcdir)/include/libxml2
 
 lib_LTLIBRARIES= libdiameter.la
 libdiameter_la_SOURCES= $(h_sources) $(c_sources)
